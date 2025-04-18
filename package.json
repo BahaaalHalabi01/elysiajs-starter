@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Warn: no test specified\" && exit 0",
+    "dev": "bun run --watch src/index.ts",
+		"build": "bun build --minify --sourcemap --target bun --outfile  server ./src/index.ts"
+  },
+  "dependencies": {
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
